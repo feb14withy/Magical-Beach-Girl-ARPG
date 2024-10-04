@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cip2i57mji547"]
+[gd_scene load_steps=3 format=3 uid="uid://cip2i57mji547"]
 
-[ext_resource type="PackedScene" uid="uid://pbamiiulacro" path="res://Scenes/main_level.tscn" id="1_2dm5d"]
+[ext_resource type="Script" path="res://Scenes/SubViewport.gd" id="1_1odii"]
+[ext_resource type="PackedScene" uid="uid://dui5esmjrseo5" path="res://Scenes/main_menu.tscn" id="1_tsfiq"]
 
 [node name="Interface" type="Control"]
 layout_mode = 3
@@ -11,14 +12,20 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Container" type="SubViewportContainer" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 651.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="Container"]
 handle_input_locally = false
-size = Vector2i(1152, 651)
+size = Vector2i(854, 480)
 render_target_update_mode = 4
+script = ExtResource("1_1odii")
 
-[node name="Main Level" parent="Container/SubViewport" instance=ExtResource("1_2dm5d")]
+[node name="Main Menu" parent="Container/SubViewport" instance=ExtResource("1_tsfiq")]
+
+[connection signal="start" from="Container/SubViewport/Main Menu" to="Container/SubViewport" method="_on_main_menu_start"]

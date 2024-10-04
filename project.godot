@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="Magical beach Girl ARPG"
-run/main_scene="res://Scenes/main_menu.tscn"
+run/main_scene="res://Scenes/main_interface.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=854
+window/size/viewport_height=480
+window/size/resizable=false
 
 [filesystem]
 
