@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvy1gouf5lby6"
+path="res://.godot/imported/SlimeMonster_V1.obj-cd7f955c9afc5374c4a6b6500c697724.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SlimeMonster_V1.obj-cd7f955c9afc5374c4a6b6500c697724.mesh"]
+
+source_file="res://Assets/Props/Slime/SlimeMonster_V1.obj"
+dest_files=["res://.godot/imported/SlimeMonster_V1.obj-cd7f955c9afc5374c4a6b6500c697724.mesh", "res://.godot/imported/SlimeMonster_V1.obj-cd7f955c9afc5374c4a6b6500c697724.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
